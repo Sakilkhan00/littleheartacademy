@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Allow: /public/
+Disallow: /public/index.php/
+Disallow: /index.php/
+Disallow: /services/
+Disallow: /service/
+
+
+Sitemap: https://prilient.com/sitemap.xml
