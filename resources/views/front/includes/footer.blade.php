@@ -106,7 +106,7 @@
     {
         position: absolute;
         right: 27px;
-        margin-top: -33px;
+        margin-top: -40px;
         color: white;
         opacity: 1;
     }

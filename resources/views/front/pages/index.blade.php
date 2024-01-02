@@ -275,7 +275,7 @@ img {
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-body">
-                <h4 class="modal-title blink_me">Apply Free Solved Sample Papers </h4>
+                <h4 class="modal-title ">Apply Free Solved Sample Papers </h4>
 
                 <button type="button" class="close colse_modal" data-dismiss="modal">×</button>
                 <br clear="all">
@@ -376,14 +376,14 @@ img {
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>Mobile No. 1<span class="compulsory">*</span></label>
-                                <input type="text" pattern="[1-9]{1}[0-9]{9}" minlength="10" maxlength="10" name="mobile1" id="mobile_no_1" placeholder="Enter Mobile No.1" class="form-control" required="required">
+                                <label>Mobile Number<span class="compulsory">*</span></label>
+                                <input type="text" pattern="[1-9]{1}[0-9]{9}" minlength="10" maxlength="10" name="mobile1" id="mobile_no_1" placeholder="Enter Mobile Number" class="form-control" required="required">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>Mobile No. 2<span class="compulsory">*</span></label>
-                                <input type="text" pattern="[1-9]{1}[0-9]{9}" minlength="10" maxlength="10" name="mobile2" id="mobile_no_2" placeholder="Enter Mobile No.2" class="form-control" required="required">
+                                <label>Mobile Number<span class="compulsory">*</span></label>
+                                <input type="text" pattern="[1-9]{1}[0-9]{9}" minlength="10" maxlength="10" name="mobile2" id="mobile_no_2" placeholder="Enter Mobile Number" class="form-control" required="required">
                             </div>
                         </div>
 
@@ -530,7 +530,7 @@ img {
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>Write Complete Address <span class="compulsory">*</span></label>
+                                <label>Address <span class="compulsory">*</span></label>
                                 <textarea rows="3" name="address" placeholder="Enter Your Address" class="form-control" required="required"></textarea>
                             </div>
                         </div>
