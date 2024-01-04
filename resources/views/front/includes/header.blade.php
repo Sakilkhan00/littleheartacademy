@@ -15,13 +15,13 @@
                      <button class="close-toggler" type="button" data-toggle="offcanvas"> <span><i class="fas fa-times-circle" aria-hidden="true"></i></span> </button>
                      <ul class="navbar-nav mr-auto">
                         @foreach ($navbars as $navbarItem)
-                              @if($navbarItem['route'] =='/')
+                              @if($navbarItem['route'] =='home')
                                <li class="nav-item">
                                    <a class="nav-link active" href="{{ url('/') }}">{{ $navbarItem['name'] }}</a>
                                </li>
-                              @elseif($navbarItem['route'] =='contact-us')
+                              @elseif($navbarItem['route'] =='contact Us')
                                <li class="nav-item">
-                                   <a class="nav-link" href="{{url($navbarItem['route'])}}">{{ $navbarItem['name'] }}</a>
+                                   <a class="nav-link" href="{{url('contact-us')}}">{{ $navbarItem['name'] }}</a>
                                </li>
                               @else
                               @if(!empty($navbarItem['subMenu']))

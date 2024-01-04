@@ -1,7 +1,7 @@
 
 @extends('front.layouts.app')
 @section('title', "Little Heart Academy")
-
+<?php $config = CstmConfig();?>
 @section('content') 
 <style>
     element.style {
@@ -235,7 +235,7 @@ img {
                     <h1>Call To Enroll Your Child</h1>
                 </div>
                 <p></p>
-                <div class="phonewrp"><img src="{{ asset('public/assets/images/phone_icon.png')}}" alt=""><a href="tel:8708666082">8708666082</a></div>
+                <div class="phonewrp"><img src="{{ asset('public/assets/images/phone_icon.png')}}" alt=""><a href="tel:{{$config['contact_phone']}}">{{$config['contact_phone']}}</a></div>
             </div>
         </div>
         <!-- Enroll End --> 
@@ -428,8 +428,8 @@ img {
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>Mobile No. 2<span class="compulsory">*</span></label>
-                                <input type="text" pattern="[1-9]{1}[0-9]{9}" minlength="10" maxlength="10" name="mobile3" id="mobile_no_3" placeholder="Enter Mobile No.2" class="form-control" required="required">
+                                <label>Mobile No.<span class="compulsory">*</span></label>
+                                <input type="text" pattern="[1-9]{1}[0-9]{9}" minlength="10" maxlength="10" name="mobile3" id="mobile_no_3" placeholder="Enter Mobile No" class="form-control" required="required">
                             </div>
                         </div>
                     </div>
