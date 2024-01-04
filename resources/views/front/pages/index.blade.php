@@ -190,8 +190,7 @@ img {
         </div>
         <!-- Choice End --> 
 
-
-
+        @if($config['gallery_section'] == 1)
         <!-- Gallery Start -->
         <div class="gallery-wrap ">
             <div class="container">
@@ -227,7 +226,7 @@ img {
             </div>
         </div>
         <!-- Gallery End --> 
-
+    @endif
         <!-- Enroll Start -->
         <div class="choice-wrap enroll-wrap">
             <div class="container">
@@ -240,6 +239,7 @@ img {
         </div>
         <!-- Enroll End --> 
 <!-- Teacher Start -->
+@if($config['course_section'] == 1)
 <section class="teachers-area-three teacher-wrap pt-100 pb-70  ">
   <div class="container">
     <div class="title center_title">
@@ -264,12 +264,10 @@ img {
         @else
         <h6>Course available soon</h6>
         @endif
-           
-          
     </div>
   </div>
 </section>
-
+@endif
 <!-- Teacher end --> 
 <div id="myModal" class="modal fade applysamplepaper in" role="dialog" style="display: block;">
     <div class="modal-dialog modal-lg">
@@ -383,7 +381,7 @@ img {
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Mobile Number<span class="compulsory">*</span></label>
-                                <input type="text" pattern="[1-9]{1}[0-9]{9}" minlength="10" maxlength="10" name="mobile2" id="mobile_no_2" placeholder="Enter Mobile Number" class="form-control" required="required">
+                                <input type="text" oninput="check()" pattern="[1-9]{1}[0-9]{9}" minlength="10" maxlength="10" name="mobile2" id="mobile_no_2" placeholder="Enter Mobile Number" class="form-control" required="required">
                             </div>
                         </div>
 

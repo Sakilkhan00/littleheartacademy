@@ -202,6 +202,8 @@ class SettingController extends Controller
             SqlFun::update_option("googleplus_link", $request->googleplus_link);
             SqlFun::update_option("youtube_link", $request->youtube_link);
             SqlFun::update_option("external_code", $request->external_code);
+            SqlFun::update_option("gallery_section", $request->gallery_section);
+            SqlFun::update_option("course_section", $request->course_section);
         }
     
         return redirect()->back();

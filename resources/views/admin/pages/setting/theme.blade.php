@@ -24,8 +24,7 @@
             <form method="post" action="{{route('setting.add')}}?action=theme_setting" enctype="multipart/form-data">
               {{ csrf_field() }}
               <div class="box-body">                                    
-              
-   
+            
                 <div class="form-group">
                     <label class="">Meta Keywords:</label>
                     <div>
@@ -39,7 +38,20 @@
                         <input name="meta_description" type="text" class="form-control" value="{{@$config['meta_description']}}">
                     </div>
                 </div>
-
+                <div class="form-group">
+                    <label for="gallery_section">Enable Gallery Section</label>
+                    <select name="gallery_section" id="gallery_section" class="form-control">
+                        <option value="1" <?php if(@$config['gallery_section'] == 1){ echo "selected"; } ?>>Yes</option>
+                        <option value="0" <?php if(@$config['gallery_section'] == 0){ echo "selected"; } ?>>No</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="course_section">Enable Course Section</label>
+                    <select name="course_section" id="course_section" class="form-control">
+                        <option value="1" <?php if(@$config['course_section'] == 1){ echo "selected"; } ?>>Yes</option>
+                        <option value="0" <?php if(@$config['course_section'] == 0){ echo "selected"; } ?>>No</option>
+                    </select>
+                </div>
                 <!--Default Horizontal Form-->
                 <div class="form-group">
                     <label class="">Contact Address:</label>
