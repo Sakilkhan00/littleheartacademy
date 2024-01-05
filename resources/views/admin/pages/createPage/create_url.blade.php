@@ -43,6 +43,14 @@
                 <div class="form-group {{ $errors->has('website') ? ' has-error' : '' }}">
                   <label>Website URL :</label><strong class="error">*</strong>
                    <input type="text" class="form-control my-colorpicker1" placeholder="Enter Website Url" name="website" value="{{ old('website') }}">
+                </div> 
+                <div class="form-group {{ $errors->has('status') ? ' has-error' : '' }}">
+                  <label>Status</label><strong class="error">*</strong>
+                  <select class="form-control" name="status">
+                    <option value="">--Select Status--</option>
+                    <option value="1" {{ old('status')==1 ? 'selected' : '' }}>Active</option>
+                    <option value="0" {{ old('status')==0 ? 'selected' : '' }}>Deactive</option>
+                  </select>
                 </div>
                 <div class="form-group pull-right">
                   <button class="btn btn-info" type="submit">Save</button>

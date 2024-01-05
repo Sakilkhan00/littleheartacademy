@@ -39,6 +39,7 @@ class CreatePageController extends Controller
             $page->menu_id            = $request->menu_id;
             $page->website_url            = $request->website;
             $page->slug             = $slug;
+            $page->status             = $request->status;
             
             
             if($page->save())
@@ -155,6 +156,7 @@ class CreatePageController extends Controller
             $page->menu_id          = $request->menu_id;
             $page->website_url      = $request->website_url;
             $page->slug             = $slug;
+            $page->status      = $request->status;
             
             
             if($page->save())
