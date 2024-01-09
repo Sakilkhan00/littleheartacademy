@@ -11,7 +11,7 @@
         <h3>Quick links</h3>
         <ul class="footer-links">
           <li> <a href="{{ url('/') }}">Home</a></li>
-          <li> <a href="about.php">About</a></li>
+          <li> <a href="{{ url('about-us') }}">About</a></li>
         
           <li> <a href="{{ url('contact-us') }}">Contact Us</a></li>
         </ul>

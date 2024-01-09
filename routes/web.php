@@ -39,6 +39,12 @@ Auth::routes(['register' => false,'home' => false]);
     Route::get('page/{slug}', [HomeController::class, 'StaticPage']);
     Route::post('Samplepaperaction', [SamplepaperactionController::class, 'sendMail'])->name('samplepaper.store');
     Route::get('course/{slug}', [CourseController::class, 'courseView'])->name('course.view');
+    
+    Route::get('about-us', function () {
+       return view('front.pages.about_us');
+    });
+
+    Route::get('gallery-view', [HomeController::class, 'galleryView']);
 
 });
 

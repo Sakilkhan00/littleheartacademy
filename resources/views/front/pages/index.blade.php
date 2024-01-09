@@ -203,7 +203,7 @@ img {
                                 </div>
                                 <p>Hard to forget such strong memories with the best people.</p>
                                 
-                                <div class="readmore"><a href="#">View All Gallery</a></div>
+                                <div class="readmore"><a href="{{ url('gallery-view') }}">View All Gallery</a></div>
                             </div>
                         </div>
                     </div>

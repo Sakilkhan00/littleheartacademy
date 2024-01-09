@@ -53,4 +53,10 @@ class HomeController extends Controller
         return view('front.pages.about_us', compact('ComanyReview'));
     }
 
+    public function galleryView()
+    {
+        $gallery = Gallery::take(6)->select('id','title','image_path')->get();
+        return view('front.pages.gallery_view', compact('gallery'));
+    }
+
 }

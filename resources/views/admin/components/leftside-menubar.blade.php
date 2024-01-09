@@ -58,7 +58,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="{{ url('admin/gallery') }}"><i class="fa fa-circle-o"></i> List Images</a></li>
-            <li><a href="{{ url('admin/add-gallery') }}"><i class="fa fa-circle-o"></i> Add Image</a></li>
+            <li><a href="{{ url('admin/add-gallery-image') }}"><i class="fa fa-circle-o"></i> Add Image</a></li>
           </ul>
         </li>
         
