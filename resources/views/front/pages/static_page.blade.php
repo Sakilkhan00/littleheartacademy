@@ -8,6 +8,7 @@
                 text-decoration: none;
                 display: inline-block;
                 outline: none;
+                color: #007bff;
             }
             ul,ol{
                 margin-left:20px;
@@ -531,6 +532,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
             }
             table, th, td {
                 border: 2px solid rgba(0,0,0);
+                padding:10px;
             }
 
             .panel-title a {
