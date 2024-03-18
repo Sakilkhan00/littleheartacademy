@@ -5311,3 +5311,11 @@ textarea.form-control {
 .tab-pane ol{
     margin-left: 15px;
 }
+.course_box .card-body{ 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.course_box .card-body .card-title{ 
+    margin-bottom: 0px;
+}

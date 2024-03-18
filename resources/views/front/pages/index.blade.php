@@ -119,8 +119,7 @@
           </div>
           <div class="col-lg-7 col-12">
           <div class="title">
-            <h2>About Us</span>
-            </h2>
+            <h2>About Us</h2>
           </div>
             <p> This coaching provides preparation for the entrance exam for sainik school, military schools, Navodaya Vidyalaya's, Gurukul and CHS.</p>
             <ul class="nav nav-pills mb-3" role="tablist">
@@ -180,12 +179,12 @@
 <div class="about-wrap  " id="about">
   <div class="container">
     <div class="row">
-      <div class="col-lg-7">
+      <div class="col-lg-6">
         <div class="aboutImg">
           <img loading="eager" src="{{ asset('public/assets/uploads/1699423354_97b08fe242f7899e0568.jpg')}}" alt="Institute" width="500px" height="500px">
         </div>
       </div>
-      <div class="col-lg-5">
+      <div class="col-lg-6">
         <div class="about_box">
           <div class="title">
             <h2>An Institute for Academy & <span>Competitive Excellence</span>
@@ -304,18 +303,18 @@
 <!-- Teacher Start --> 
 @if($config['course_section'] == 1) 
 <section class="teachers-area-three teacher-wrap pt-100 pb-70  ">
-  <div class="container">
+  <div class="container content-row">
     <div class="title center_title">
       <h1>Our Courses</h1>
     </div>
     <div class="row"> 
         @if(!empty($course)) 
         @foreach($course as $item) 
-          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-            <a class="card shadow course_box" href="#">
+          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 mt-4">
+            <a class="card shadow course_box h-100" href="#">
               <img loading="eager" src="{{ asset('public/storage/course/')}}/{{$item->image}}" class="card-img-top" alt="{{$item->title}}">
               <div class="card-body">
-                <h4 class="card-title">{{$item->title}}</h4>
+                <h5 class="card-title">{{$item->title}}</h5>
               </div>
             </a>
           </div>
