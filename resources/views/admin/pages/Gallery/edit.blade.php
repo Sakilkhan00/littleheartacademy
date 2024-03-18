@@ -29,6 +29,7 @@
                   <input type="hidden" value="{{ $gallery->id }}" name="gallery_id">
                   <input type="text" class="form-control my-colorpicker1" placeholder="Title" name="title" value="{{ old('title',$gallery->title) }}">
                 </div>  
+                
                                                          
                 <div class="form-group {{ $errors->has('image') ? ' has-error' : '' }}">
                   <label>Image</label><strong class="error">*</strong><br>

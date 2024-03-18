@@ -1426,16 +1426,6 @@ a.slidebtn i {
     padding: 60px 0;
 }
 
-.gallery_box {
-    display: table;
-    height: 100%;
-}
-
-.gallery_left {
-    display: table-cell;
-    vertical-align: middle;
-}
-
 .galleryImg {
     margin: 15px 0;
     position: relative;

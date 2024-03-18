@@ -27,7 +27,8 @@
                 <div class="form-group {{ $errors->has('title') ? ' has-error' : '' }}">
                   <label>Title</label><strong class="error">*</strong>
                   <input type="text" class="form-control my-colorpicker1" placeholder="Title" name="title" value="{{ old('title') }}">
-                </div>                                               
+                </div>  
+
                 <div class="form-group {{ $errors->has('image') ? ' has-error' : '' }}">
                   <label>Image</label><strong class="error">*</strong><br>
                   <img id="preview_img" src="{{ url('public/images/profile.png') }}" class="" width="200" height="150"/>

@@ -32,7 +32,7 @@ class HomeController extends Controller
     public function home(){
         $banner = Banner::all();
         // dd($banner);
-        $gallery = Gallery::take(6)->select('id','title','image_path')->get();
+        $gallery = Gallery::take(4)->select('id','title','image_path')->orderBy('id', 'DESC')->get();
         $course = Course::where('status', 1)->select('image','slug', 'title')->get();
         return view('front.pages.index', compact('banner','gallery','course'));
     }
@@ -55,7 +55,7 @@ class HomeController extends Controller
 
     public function galleryView()
     {
-        $gallery = Gallery::take(6)->select('id','title','image_path')->get();
+        $gallery = Gallery::select('id','title','image_path')->orderBy('id', 'DESC')->get();
         return view('front.pages.gallery_view', compact('gallery'));
     }
 

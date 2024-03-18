@@ -248,26 +248,23 @@
 <div class="gallery-wrap ">
   <div class="container">
     <div class="row">
-      <div class="col-lg-3">
+      <div class="col-lg-12">
         <div class="gallery_box">
-          <div class="gallery_left">
+          <div class="gallery_left text-center">
             <div class="title">
               <h1>Photo Gallery</h1>
             </div>
             <p>Hard to forget such strong memories with the best people.</p>
-            <div class="readmore">
-              <a href="{{ url('gallery-view') }}">View All Gallery</a>
-            </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-9">
+      <div class="col-lg-12">
         <div class="row"> 
             @if(!empty($gallery)) 
             @foreach($gallery as $img) 
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-3 col-md-6">
               <div class="galleryImg">
-                <img loading="eager" src="{{ asset('public/assets/gallery')}}/{{$img->image_path}}" alt="" width="300px" height="200px">
+                <img loading="eager" src="{{ asset('public/assets/gallery')}}/{{$img->image_path}}" alt="{{$img->title}}" width="300px" height="300px">
                 <div class="portfolio-overley">
                     <div class="content">
                       <a href="{{ asset('public/assets/gallery')}}/{{$img->image_path}}" class="fancybox image-link" data-fancybox="images" title="{{$img->title}}">
@@ -279,6 +276,11 @@
             </div> 
           @endforeach 
           @endif 
+        </div>
+      </div>
+      <div class="col-lg-12 text-center">
+        <div class="readmore ">
+          <a href="{{ url('gallery-view') }}">View All Gallery</a>
         </div>
       </div>
     </div>
