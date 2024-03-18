@@ -11,8 +11,8 @@ $('[data-toggle="offcanvas"]').on('click', function () {
 /* ================ Revolution Slider. ================ */
     if($('.tp-banner').length > 0){
         $('.tp-banner').show().revolution({
-            delay:6000,
-            startheight: 700,
+            delay:60000,
+            startheight: 540,
             startwidth: 1170,
             hideThumbs: 1000,
             navigationType: 'none',

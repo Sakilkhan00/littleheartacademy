@@ -9,7 +9,7 @@
         @foreach($banner as $item) 
             @if($item->type == 0) 
             <li data-slotamount="7" data-transition="3dcurtain-horizontal" data-masterspeed="1000" data-saveperformance="on">
-            <iframe width="100%" height="700" src="{{$item->video}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="100%" height="500" src="{{$item->video}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <div class="caption lft large-title tp-resizeme slidertext2" data-x="center" data-y="170" data-speed="600" data-start="1600">
             <span></span>
             </div>
@@ -119,16 +119,48 @@
           </div>
           <div class="col-lg-7 col-12">
           <div class="title">
-            <h2>About Institute</span>
+            <h2>About Us</span>
             </h2>
           </div>
-            <p>Navodaya wale exists to help students. We take a unique and innovative approach to teaching that helps students connect with the subject matter they need to master. Through personalized and focused teaching processes, our students develop the tools they need for ongoing success in their fields of study. Our success depends on our attention to the needs of our students and truly helping them to achieve – we don’t succeed unless our students succeed.
-          <br>
-          The ethos of navodaya wale is to recognize the potential in every student and provide the highest quality of education to help them succeed. We are here to help our students achieve their full academic potential using unique teaching methods (utm). Our teachers consist of qualified teachers, professionals and current undergraduates. We believe that learning a subject from different perspectives allows a student to thoroughly understand the topic. 
-          </p>
-        <div class="readmore">
-          <a href="{{ url('about-us') }}">Read More</a>
-        </div>
+            <p> This coaching provides preparation for the entrance exam for sainik school, military schools, Navodaya Vidyalaya's, Gurukul and CHS.</p>
+            <ul class="nav nav-pills mb-3" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#vision" role="tab">Vision</a>
+              </li>
+              <li class="nav-item ml-3">
+                <a class="nav-link" data-toggle="tab" href="#mission" role="tab">Mission</a>
+              </li>
+              <li class="nav-item ml-3">
+                <a class="nav-link" data-toggle="tab" href="#why-us" role="tab">Why us</a>
+              </li>
+            </ul><!-- Tab panes -->
+              <div class="tab-content">
+                <div class="tab-pane active" id="vision" role="tabpanel">
+                  <p>Impart quality education to meet the needs of profession and society, and achieve excellence in teaching-learning and research. Attract and develop talented and committed human resource, and provide an environment conducive to innovation, creativity, team-spirit and entrepreneurial leadership.</p>
+                </div>
+                <div class="tab-pane" id="mission" role="tabpanel">
+                  <ol>
+                    <li>Set goals</li>
+                    <li>Create an action plan to reach goals</li>
+                    <li>Generate better results</li>
+                    <li>Set their practice and approach in the right direction</li>
+                    <li>Make their vision achievable</li>
+                  </ol>
+                </div>
+                <div class="tab-pane" id="why-us" role="tabpanel">
+                  <ol>
+                    <li>Excellent staff</li>
+                    <li>Weekly test with results displayed to the parents</li>
+                    <li>Good accommodation</li>
+                    <li>Good food</li>
+                    <li>A.C. classrooms</li>
+                    <li>Highest success rate in exams.</li>
+                  </ol>
+                </div>
+              </div>
+              <div class="readmore">
+                <a href="{{ url('about-us') }}">Read More</a>
+              </div>
           </div>
       </div>
   </div>
@@ -279,7 +311,7 @@
     <div class="row"> 
         @if(!empty($course)) 
         @foreach($course as $item) 
-          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
             <a class="card shadow course_box" href="#">
               <img loading="eager" src="{{ asset('public/storage/course/')}}/{{$item->image}}" class="card-img-top" alt="{{$item->title}}">
               <div class="card-body">
