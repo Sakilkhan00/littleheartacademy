@@ -12,8 +12,8 @@
         <ul class="footer-links">
           <li> <a href="{{ url('/') }}">Home</a></li>
           <li> <a href="{{ url('about-us') }}">About</a></li>
-        
           <li> <a href="{{ url('contact-us') }}">Contact Us</a></li>
+          <li> <a href="{{ url('privacy_policy') }}">Privacy Policy</a></li>
         </ul>
       </div>
       <div class="col-lg-3 col-md-4">

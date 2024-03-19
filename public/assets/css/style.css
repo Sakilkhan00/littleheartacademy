@@ -170,7 +170,6 @@ ul.tick li {
     font-size: 16px;
 }
 
-.loginwrp {}
 
 .loginwrp a {
     text-decoration: none;
@@ -3576,11 +3575,11 @@ blockquote::before {
     padding: 50px;
 }
 
-.loginWrp {
+/*.loginWrp {
     border-top: 1px solid #ffb607;
     margin-top: 40px;
     padding-top: 30px;
-}
+}*/
 
 .loginWrp .form-group .form-control {
     height: 50px;
@@ -5309,3 +5308,23 @@ textarea.form-control {
 .course_box .card-body .card-title{ 
     margin-bottom: 0px;
 }
+.contact_btn_bnner{
+    position: absolute;
+    z-index: 101;
+    background: rgb(43 57 145);
+    padding: 10px 30px;
+    margin-left: 5%;
+    bottom: 75px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.3s ease 0s;
+    border-radius: 5px;
+}
+.contact_btn_bnner:hover{
+  background-color: #2EE59D;
+  color: #fff;
+}
+
+

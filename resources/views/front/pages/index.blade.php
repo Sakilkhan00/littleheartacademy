@@ -3,6 +3,7 @@
 <?php $config = CstmConfig();?> 
 @section('content') 
 @if(!empty($banner)) 
+
 <div class="tp-banner-container">
   <div class="tp-banner">
     <ul> 
@@ -20,7 +21,8 @@
             <div class="caption lft large-title tp-resizeme slidertext2" data-x="center" data-y="170" data-speed="600" data-start="1600">
             <span></span>
             </div>
-        </li> 
+        </li>
+        <a href="{{ url('contact-us') }}" class="contact_btn_bnner">Contact us</a> 
         @endif 
       @endforeach 
     </ul>
@@ -357,7 +359,9 @@
             return true;
           }
         </script>
-        <form action="{{ route('samplepaper.store') }}" method="post" enctype="multipart/form-data" onsubmit="return check();"> @csrf <div class="row">
+        <form action="javascript:void(0)" method="post" onsubmit="return check();" id="samplepaper_form"> 
+          @csrf 
+          <div class="row">
             <div class="col-md-6">
               <div class="form-group">
                 <label>Student Name <span class="compulsory">*</span>
@@ -617,8 +621,7 @@
           <div class="row">
             <div class="col-md-12 float-right ">
               <div class="form-group float-right">
-                <input type="hidden" name="staff_id" value="327" />
-                <input type="submit" name="submit" value="Submit" class="btn btn-primary mybutton6">
+                <input type="submit" id="company_form_btn" value="Submit" class="btn btn-primary mybutton6">
               </div>
             </div>
             <br clear="all">
@@ -629,4 +632,24 @@
     </div>
   </div>
 </div> 
+
 @endsection
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#company_form").submit(function(e) {
+            e.preventDefault();
+            let form = $(this)[0];
+            let data = new FormData(form);
+            
+            // Perform additional validation if needed
+            if (form.checkValidity()) {
+                console.log("Form is valid, submitting data:", data);
+                // Proceed with AJAX submission or other actions
+            } else {
+                console.log("Form is invalid, please check the inputs.");
+                // Handle invalid form inputs
+            }
+        });
+    });
+</script>
