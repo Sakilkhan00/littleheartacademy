@@ -4,7 +4,7 @@
 
 @section('content') 
 <style type="text/css">
-    ul li{
+   #contact ul li{
         line-height: 25px;
         margin-top: 15px;
     }
