@@ -4,7 +4,10 @@
    <div class="container-fluid">
       <div class="row">
          <div class="col-lg-1 col-md-12 navbar-light">
-            <div class="logo"> <a href="{{ url('/') }}"><img alt="" class="logo-default" width="50px" src="{{asset('public/storage/logo/')}}/{{$config['site_logo']}}"></a></div>
+            <div class="logo"> 
+               <a href="{{ url('/') }}">
+               <img alt="logo" loading="eager" class="logo-default" width="50px" src="{{asset('public/storage/logo/')}}/{{$config['site_logo']}}"></a>
+            </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
          </div>
          <div class="col-lg-8 col-md-12">

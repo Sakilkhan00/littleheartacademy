@@ -350,23 +350,15 @@
         <h4 class="modal-title ">Apply Free Solved Sample Papers </h4>
         <button type="button" class="close colse_modal" data-dismiss="modal">×</button>
         <br clear="all">
-        <script>
-          function check() {
-            if (document.getElementById("mobile_no_1").value == document.getElementById("mobile_no_2").value) {
-              alert("Mobile No. 1 can't be same Mobile No. 2");
-              return false;
-            }
-            return true;
-          }
-        </script>
-        <form action="javascript:void(0)" method="post" onsubmit="return check();" id="samplepaper_form"> 
+        
+        <form id="samplepaper_form"> 
           @csrf 
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
                 <label>Student Name <span class="compulsory">*</span>
                 </label>
-                <input type="text" name="student_name" placeholder="Enter Student Name" class="form-control" required="required">
+                <input type="text" name="student_name" placeholder="Enter Student Name" class="form-control">
               </div>
             </div>
             <div class="col-md-6">
@@ -621,7 +613,7 @@
           <div class="row">
             <div class="col-md-12 float-right ">
               <div class="form-group float-right">
-                <input type="submit" id="company_form_btn" value="Submit" class="btn btn-primary mybutton6">
+                <button type="submit" class="samplepaper_form_btn btn btn-primary mybutton6">Submit</button>
               </div>
             </div>
             <br clear="all">
@@ -633,23 +625,127 @@
   </div>
 </div> 
 
+<!-- Notify -->
+<div id="popup_message" class="popup_message">
+      <div class="popup-content">
+          <h5 style="color:green;" id="popup_content"></h5>
+          <p id="countdown">5</p>
+          <button id="closePopup" class="btn btn-danger">Close</button>
+      </div>
+  </div>
+
 @endsection
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+@section("footer_script")
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 <script>
-    $(document).ready(function() {
-        $("#company_form").submit(function(e) {
-            e.preventDefault();
-            let form = $(this)[0];
-            let data = new FormData(form);
-            
-            // Perform additional validation if needed
-            if (form.checkValidity()) {
-                console.log("Form is valid, submitting data:", data);
-                // Proceed with AJAX submission or other actions
-            } else {
-                console.log("Form is invalid, please check the inputs.");
-                // Handle invalid form inputs
+function showPopup(message, duration) {
+    $('#popup_content').text(message);
+    $('#popup_message').fadeIn();
+    var seconds = duration;
+
+    var countdownInterval = setInterval(function () {
+        seconds--;
+        $('#countdown').text(seconds);
+
+        if (seconds <= 0) {
+            clearInterval(countdownInterval);
+            $('#popup_message').fadeOut();
+        }
+    }, 1000);
+}
+
+$("#closePopup").click(function(){
+   $('#popup_message').fadeOut();
+});
+                   
+
+
+   function check() {
+            if (document.getElementById("mobile_no_1").value == document.getElementById("mobile_no_2").value) {
+              alert("Mobile No. 1 can't be same Mobile No. 2");
+              return false;
             }
-        });
-    });
+            return true;
+          }
+
+    if ($("#samplepaper_form").length > 0) {
+      $("#samplepaper_form").validate({
+      rules: {
+         student_name: {
+            required: true,
+         },
+         email: {
+            required: true,
+            email: true,
+         },
+         dob: {
+            required: true,
+         },
+         state: {
+            required: true,
+         }, 
+         city: {
+            required: true,
+         }, 
+         pincode: {
+            required: true,
+         }, 
+         landmark: {
+            required: true,
+         }, 
+         mobile1: {
+            required: true,
+            number:true,
+            maxlength:10
+         },
+         mobile2: {
+            required: true,
+            number:true,
+            maxlength:10,
+         }, 
+         state: {
+            required: true,
+         }, 
+         state: {
+            required: true,
+         },   
+      },
+      messages: {
+         student_name: {
+            required: "Please enter student name",
+         },
+         email: {
+            required: "Please enter valid email",
+            email: "Please enter valid email",
+         },
+      },
+      submitHandler: function(form) {
+        if (check()) {
+            $.ajaxSetup({
+               headers: {
+               'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+               }
+            });
+            $('.samplepaper_form_btn').html('Please Wait...');
+            $(".samplepaper_form_btn").attr("disabled", true);
+              $.ajax({
+                 url: "{{ route('samplepaper.store') }}",
+                 type: "POST",
+                 data: $('#samplepaper_form').serialize(),
+                 success: function( response ) {
+                    $('#samplepaper_form')[0].reset();
+                    $('.samplepaper_form_btn').html('Submit');
+                    $(".samplepaper_form_btn").attr("disabled", false);
+                    $('.colse_modal').trigger('click');
+                    showPopup("Request sent successfully.",5);
+                 }
+              });
+            }else{
+
+            }
+         }
+      })
+   }
 </script>
+@endsection

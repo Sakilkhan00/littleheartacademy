@@ -46,9 +46,7 @@ Auth::routes(['register' => false,'home' => false]);
     Route::get('privacy_policy', function () {
        return view('front.pages.privacy_policy');
     });
-
     Route::get('gallery-view', [HomeController::class, 'galleryView']);
-
 });
 
  

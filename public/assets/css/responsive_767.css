@@ -1,0 +1,8 @@
+@media screen and (max-width: 767px) {
+  .applysamplepaper .modal-title {
+    font-size: 16px;
+  }
+  .new_bg,.new_bg::before{
+    height: 400px;
+  }
+}

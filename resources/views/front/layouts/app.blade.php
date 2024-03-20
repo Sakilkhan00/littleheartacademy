@@ -11,7 +11,9 @@
       @include('front.includes.header')
       @yield('content')
       @yield('footer_script')
+      
       @include('front.includes.footer')
+
       <script>
         $(document).ready(function() {
             $("#myModal").modal('show');
@@ -33,5 +35,6 @@
             });
         });
     </script>
+
     </body>
 </html>

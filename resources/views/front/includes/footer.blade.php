@@ -4,7 +4,8 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-4">
-        <div class="footer_logo"><img alt="" class="footer-default" width="150px" src="{{asset('public/storage/logo/')}}/{{CstmConfig()['site_logo_footer']}}"></div>
+        <div class="footer_logo">
+            <img alt="footer logo" loading="eager" class="footer-default" width="150px" src="{{asset('public/storage/logo/')}}/{{CstmConfig()['site_logo_footer']}}"></div>
         <p>{{CstmConfig()['footer_text']}}</p>
       </div>
       <div class="col-lg-2 col-md-4">
@@ -60,21 +61,17 @@
         <!-- Js --> 
 <script src="{{ asset('public/assets/js/jquery.min.js')}}"></script> 
 <script src="{{ asset('public/assets/js/bootstrap.min.js')}}"></script> 
-<script src="{{ asset('public/assets/js/popper.min.js')}}"></script> 
+<script async src="{{ asset('public/assets/js/popper.min.js')}}"></script> 
 <script src="{{ asset('public/assets/rs-plugin/js/jquery.themepunch.tools.min.js')}}"></script> 
 <script src="{{ asset('public/assets/rs-plugin/js/jquery.themepunch.revolution.min.js')}}"></script> 
-<!-- Jquery Fancybox --> 
-<script src="{{ asset('public/assets/js/jquery.fancybox.min.js')}}"></script> 
-<!-- Animate js --> 
+<script async src="{{ asset('public/assets/js/jquery.fancybox.min.js')}}"></script> 
 <script src="{{ asset('public/assets/js/animate.js')}}"></script> 
 <script>
   new WOW().init();
 </script> 
-<!-- WOW file --> 
-<script src="{{ asset('public/assets/js/wow.js')}}"></script> 
-<!-- general script file --> 
-<script src="{{ asset('public/assets/js/owl.carousel.js')}}"></script> 
-<script src="{{ asset('public/assets/js/script.js')}}"></script>
+<script async src="{{ asset('public/assets/js/wow.js')}}"></script> 
+<script defer src="{{ asset('public/assets/js/owl.carousel.js')}}"></script> 
+<script async src="{{ asset('public/assets/js/script.js')}}"></script>
 <style>
     .modal-content
     {
