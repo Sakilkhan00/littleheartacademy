@@ -183,7 +183,7 @@
     <div class="row">
       <div class="col-lg-6">
         <div class="aboutImg">
-          <img loading="eager" src="{{ asset('public/assets/uploads/1699423354_97b08fe242f7899e0568.jpg')}}" alt="Institute" width="500px" height="500px">
+          <img loading="eager" src="{{ asset('public/assets/uploads/institute_img.jpg')}}" alt="Institute" width="500px" height="500px">
         </div>
       </div>
       <div class="col-lg-6">
@@ -347,7 +347,7 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-body">
-        <h4 class="modal-title ">Apply Free Solved Sample Papers </h4>
+        <h4 class="modal-title ">Apply for registration</h4>
         <button type="button" class="close colse_modal" data-dismiss="modal">×</button>
         <br clear="all">
         
@@ -361,14 +361,14 @@
                 <input type="text" name="student_name" placeholder="Enter Student Name" class="form-control">
               </div>
             </div>
-            <div class="col-md-6">
+           <!--  <div class="col-md-6">
               <div class="form-group">
                 <label>Email Id <span class="compulsory">*</span>
                 </label>
                 <input type="email" name="email" placeholder="Enter Email Address" class="form-control" required="required">
                 <div data-lastpass-icon-root="true" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div>
               </div>
-            </div>
+            </div> -->
             <div class="col-md-6">
               <div class="form-group">
                 <label>DOB <span class="compulsory">*</span>
@@ -436,13 +436,13 @@
                 <input type="text" name="pincode" placeholder="Enter Pincode" class="form-control" required="required">
               </div>
             </div>
-            <div class="col-md-6">
+            <!-- <div class="col-md-6">
               <div class="form-group">
                 <label>Landmark <span class="compulsory">*</span>
                 </label>
                 <input type="text" name="landmark" placeholder="Enter Landmark" class="form-control" required="required">
               </div>
-            </div>
+            </div> -->
             <div class="col-md-6">
               <div class="form-group">
                 <label>Mobile Number <span class="compulsory">*</span>
@@ -450,13 +450,13 @@
                 <input type="text" pattern="[1-9]{1}[0-9]{9}" minlength="10" maxlength="10" name="mobile1" id="mobile_no_1" placeholder="Enter Mobile Number" class="form-control" required="required">
               </div>
             </div>
-            <div class="col-md-6">
+            <!-- <div class="col-md-6">
               <div class="form-group">
                 <label>Mobile Number <span class="compulsory">*</span>
                 </label>
                 <input type="text" oninput="check()" pattern="[1-9]{1}[0-9]{9}" minlength="10" maxlength="10" name="mobile2" id="mobile_no_2" placeholder="Enter Mobile Number" class="form-control" required="required">
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="row ">
             <div class="col-md-4">
@@ -474,14 +474,14 @@
                 <input type="text" name="father_name" placeholder="Enter Father's Name" class="form-control" required="required">
               </div>
             </div>
-            <div class="col-md-6">
+           <!--  <div class="col-md-6">
               <div class="form-group">
                 <label>Father Occupation <span class="compulsory">*</span>
                 </label>
                 <input type="text" name="father_occupation" placeholder="Enter Father Occupation" class="form-control" required="required">
               </div>
-            </div>
-            <div class="col-md-6">
+            </div> -->
+            <!-- <div class="col-md-6">
               <div class="form-group">
                 <label>Annual Family Income <span class="compulsory">*</span>
                 </label>
@@ -497,7 +497,7 @@
                   <option value="8 to 10 lakh and more">8 to 10 lakh and more</option>
                 </select>
               </div>
-            </div>
+            </div> -->
             <div class="col-md-6">
               <div class="form-group">
                 <label>Mobile No. <span class="compulsory">*</span>
@@ -520,80 +520,16 @@
                 <label>Apply For Class <span class="compulsory">*</span>
                 </label>
                 <select name="class_name" id="class_name" class="form-control">
-                  <!-- <option value="Class 1">Class 1</option>
-                  <option value="Class 2">Class 2</option>
-                  <option value="Class 3">Class 3</option> -->
                   <option value="Class 4">Class 4</option>
                   <option value="Class 5">Class 5</option>
                   <option value="Class 6">Class 6</option>
                   <option value="Class 7">Class 7</option>
                   <option value="Class 8">Class 8</option>
-                  <!-- <option value="Class 9">Class 9</option>
-                  <option value="Class 10">Class 10</option>
-                  <option value="Class 11">Class 11</option>
-                  <option value="Class 12">Class 12</option> -->
                 </select>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label>Select Free Solved Sample Papers <span class="compulsory">*</span>
-                </label>
-                <!--                        <input type="text" name="class" placeholder="Enter Class Name" class="form-control" required="required"/>-->
-                <select name="class" class="form-control" required="required">
-                  <option value="CAREER DEFENCE SCHOOL">CAREER DEFENCE SCHOOL</option>
-                  <option value="SAINIK SCHOOL">SAINIK SCHOOL</option>
-                  <option value="MILITARY SCHOOL">MILITARY SCHOOL</option>
-                  <option value="RIMC DEHRADUN">RIMC DEHRADUN</option>
-                  <option value="GURUKUL KURUKSHETRA">GURUKUL KURUKSHETRA</option>
-                  <option value="GURUKUL NILOKHERI">GURUKUL NILOKHERI</option>
-                  <option value="RAI SPORT SCHOOL">RAI SPORT SCHOOL</option>
-                  <option value="UP SAINIK SCHOOL LUCKNOW">UP SAINIK SCHOOL LUCKNOW</option>
-                  <option value="KITTUR SAINIK SCHOOL">KITTUR SAINIK SCHOOL</option>
-                  <option value="APS DAGSHAI">APS DAGSHAI</option>
-                  <option value="CENTRAL HINDU SCHOOL">CENTRAL HINDU SCHOOL(CHS)</option>
-                  <option value="NAVODAYA VIDHYALAYA">NAVODAYA VIDHYALAYA</option>
-                  <option value="GURUKUL CHAMANVATIKA">GURUKUL CHAMANVATIKA</option>
-                  <option value="OAK GROVE SCHOOL">OAK GROVE SCHOOL</option>
-                  <option value="U.P. Vidhya Gyan for Class 6">U.P. Vidhya Gyan for Class 6</option>
-                  <option value="NTSE For Class 10">NTSE For Class 10</option>
-                  <option value="NDA For Class 12">NDA For Class 12</option>
-                  <option value="ALIGARH MUSLIM UNIVERSITY">ALIGARH MUSLIM UNIVERSITY</option>
-                  <option value="Merchant Navy For Class 12">Merchant Navy For Class 12</option>
-                  <option value="IIT-JEE For Class 12">IIT-JEE For Class 12</option>
-                  <option value="NEET For Class 12">NEET For Class 12</option>
-                  <option value="MNS FOR CLASS 12">MNS FOR CLASS 12</option>
-                  <option value="Nursing Assistant For Class 12">Nursing Assistant For Class 12</option>
-                  <option value="R.K. Mission for Class 6">MNS FOR CLASS 12</option>
-                  <option value="Simultala Awasiya Vidhyalaya for Class 6">Simultala Awasiya Vidhyalaya for Class 6</option>
-                  <option value="Netarhat Awasiya Vidhyalaya for Class 6">Netarhat Awasiya Vidhyalaya for Class 6</option>
-                  <option value="Bhonsala Military School for 6 to 11">Bhonsala Military School for 6 to 11</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label>Want to Join Live Demo Classes ? <span class="compulsory">*</span>
-                </label>
-                <select name="demo_class" id="demo_class" class="form-control">
-                  <option value="Yes">Yes</option>
-                  <option value="No">No</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label>Interested in Course <span class="compulsory">*</span>
-                </label>
-                <select name="interested" id="interested" required="required" class="form-control">
-                  <option value="1 Year Schooling Program">Schooling + Competitive Program</option>
-                  <option value="Recorded Videos Course">Recorded Videos Course</option>
-                  <option value="2 Months Crash Course(Nov to Dec)">2 Months Crash Course(Nov to Dec)</option>
-                  <option value="Live Evening Classes(Daily 4pm to 7pm)">Live Evening Classes(Daily 4pm to 7pm)</option>
-                  <option value="15 Books Set">15 Books Set With 50 Solved Sample Papers</option>
-                </select>
-              </div>
-            </div>
+            
+            
           </div>
           <div class="row">
             <div class="col-md-6">
@@ -660,24 +596,11 @@ $("#closePopup").click(function(){
 });
                    
 
-
-   function check() {
-            if (document.getElementById("mobile_no_1").value == document.getElementById("mobile_no_2").value) {
-              alert("Mobile No. 1 can't be same Mobile No. 2");
-              return false;
-            }
-            return true;
-          }
-
     if ($("#samplepaper_form").length > 0) {
       $("#samplepaper_form").validate({
       rules: {
          student_name: {
             required: true,
-         },
-         email: {
-            required: true,
-            email: true,
          },
          dob: {
             required: true,
@@ -690,38 +613,22 @@ $("#closePopup").click(function(){
          }, 
          pincode: {
             required: true,
-         }, 
-         landmark: {
-            required: true,
-         }, 
+         },  
          mobile1: {
             required: true,
             number:true,
             maxlength:10
-         },
-         mobile2: {
-            required: true,
-            number:true,
-            maxlength:10,
          }, 
          state: {
             required: true,
-         }, 
-         state: {
-            required: true,
-         },   
+         },    
       },
       messages: {
          student_name: {
             required: "Please enter student name",
          },
-         email: {
-            required: "Please enter valid email",
-            email: "Please enter valid email",
-         },
       },
       submitHandler: function(form) {
-        if (check()) {
             $.ajaxSetup({
                headers: {
                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -741,9 +648,6 @@ $("#closePopup").click(function(){
                     showPopup("Request sent successfully.",5);
                  }
               });
-            }else{
-
-            }
          }
       })
    }

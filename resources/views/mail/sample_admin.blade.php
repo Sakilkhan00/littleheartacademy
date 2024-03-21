@@ -296,26 +296,18 @@ a[x-apple-data-detectors='true'] {
               <td style="padding:30px;background-color:#ffffff;">
                 <h5>Student Details</h5>
                 <p>Student Name    :- <?php echo $user_list['student_name']; ?> </p>
-                <p>Email   :- <?php echo $user_list['email']; ?> </p>
                 <p>Date of Birth   :- <?php echo $user_list['dob']; ?> </p>
                 <p>State   :- <?php echo $user_list['state']; ?> </p>
                 <p>City   :- <?php echo $user_list['city']; ?> </p>
                 <p>Pincode   :- <?php echo $user_list['pincode']; ?> </p>
-                <p>Landmark   :- <?php echo $user_list['landmark']; ?> </p>
-                <p>Phone Number 1  :- <?php echo $user_list['mobile1']; ?> </p>
-                <p>Phone Number 2  :- <?php echo $user_list['mobile2']; ?> </p>
+                <p>Phone Number :- <?php echo $user_list['mobile1']; ?> </p>
 
                 <h5>Family Details</h5>
                 <p>Father name  :- <?php echo $user_list['father_name']; ?> </p>
-                <p>Father occupation  :- <?php echo $user_list['father_occupation']; ?> </p>
-                <p>Annual family income  :- <?php echo $user_list['annual_family_income']; ?> </p>
                 <p>Phone Number  :- <?php echo $user_list['mobile3']; ?> </p>
 
                 <h5>Sample Paper & Demo Class Details</h5>
                 <p>Class name  :- <?php echo $user_list['class_name']; ?> </p>
-                <p>Class  :- <?php echo $user_list['class']; ?> </p>
-                <p>Demo class  :- <?php echo $user_list['demo_class']; ?> </p>
-                <p>Interested  :- <?php echo $user_list['interested']; ?> </p>
                 <p>Address  :- <?php echo $user_list['address']; ?> </p>
                 <p>Any Question  :- <?php echo $user_list['remark']; ?> </p>
                 <p>Regards<br> Little heart academy</p>
