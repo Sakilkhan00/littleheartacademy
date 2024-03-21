@@ -47,6 +47,8 @@ Auth::routes(['register' => false,'home' => false]);
        return view('front.pages.privacy_policy');
     });
     Route::get('gallery-view', [HomeController::class, 'galleryView']);
+    
+   Route::get('selection_list', 'App\Http\Controllers\admin\SelectionController@view')->name('selection_list');
 });
 
  
@@ -62,7 +64,19 @@ Route::group(['prefix' => 'admin', 'middleware' => ['admin','auth'], 'nampspace'
     Route::post('update-gallery', 'App\Http\Controllers\admin\GalleryController@update')->name('update_gallery');
     Route::get('delete-gallery/{id}', 'App\Http\Controllers\admin\GalleryController@delete')->name('delete_gallery'); 
     Route::post('update-gallery', 'App\Http\Controllers\admin\GalleryController@update')->name('update_gallery');
-     
+
+
+    Route::get('selection', 'App\Http\Controllers\admin\SelectionController@index')->name('list_selection');
+    Route::get('add-selection-image', 'App\Http\Controllers\admin\SelectionController@create')->name('add_selection');
+    Route::post('selection', 'App\Http\Controllers\admin\SelectionController@store')->name('save_selection');
+    Route::get('edit-selection/{id}', 'App\Http\Controllers\admin\SelectionController@edit')->name('edit_selection');
+    Route::post('update-selection', 'App\Http\Controllers\admin\SelectionController@update')->name('update_selection');
+    Route::get('delete-selection/{id}', 'App\Http\Controllers\admin\SelectionController@delete')->name('delete_selection'); 
+    Route::post('update-selection', 'App\Http\Controllers\admin\SelectionController@update')->name('update_selection');
+
+
+
+
     Route::resource('career', 'App\Http\Controllers\admin\CareerController');
 
     Route::post('career/Carrerupdate/{id}', [CareerController::class, 'Carrerupdate'])->name('carrer.update');

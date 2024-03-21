@@ -28,7 +28,6 @@ class SamplepaperactionController extends Controller
             'pincode'               => $request->pincode,
             'mobile1'               => $request->mobile1,
             'father_name'           => $request->father_name,
-            'mobile3'               => $request->mobile3,
             'class_name'            => $request->class_name,
             'address'               => $request->address,
             'remark'                => $request->remark,

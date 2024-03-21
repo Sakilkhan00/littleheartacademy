@@ -61,6 +61,18 @@
             <li><a href="{{ url('admin/add-gallery-image') }}"><i class="fa fa-circle-o"></i> Add Image</a></li>
           </ul>
         </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-folder"></i> <span>Achievement & Selection</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{ url('admin/selection') }}"><i class="fa fa-circle-o"></i> List selection</a></li>
+            <li><a href="{{ url('admin/add-selection-image') }}"><i class="fa fa-circle-o"></i> Add selection</a></li>
+          </ul>
+        </li>
         
         <li class="treeview">
           <a href="#">

@@ -361,14 +361,6 @@
                 <input type="text" name="student_name" placeholder="Enter Student Name" class="form-control">
               </div>
             </div>
-           <!--  <div class="col-md-6">
-              <div class="form-group">
-                <label>Email Id <span class="compulsory">*</span>
-                </label>
-                <input type="email" name="email" placeholder="Enter Email Address" class="form-control" required="required">
-                <div data-lastpass-icon-root="true" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div>
-              </div>
-            </div> -->
             <div class="col-md-6">
               <div class="form-group">
                 <label>DOB <span class="compulsory">*</span>
@@ -431,18 +423,11 @@
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <label>Pincode <span class="compulsory">*</span>
+                <label>Father Name <span class="compulsory">*</span>
                 </label>
-                <input type="text" name="pincode" placeholder="Enter Pincode" class="form-control" required="required">
+                <input type="text" name="father_name" placeholder="Enter Father's Name" class="form-control" required="required">
               </div>
             </div>
-            <!-- <div class="col-md-6">
-              <div class="form-group">
-                <label>Landmark <span class="compulsory">*</span>
-                </label>
-                <input type="text" name="landmark" placeholder="Enter Landmark" class="form-control" required="required">
-              </div>
-            </div> -->
             <div class="col-md-6">
               <div class="form-group">
                 <label>Mobile Number <span class="compulsory">*</span>
@@ -450,71 +435,13 @@
                 <input type="text" pattern="[1-9]{1}[0-9]{9}" minlength="10" maxlength="10" name="mobile1" id="mobile_no_1" placeholder="Enter Mobile Number" class="form-control" required="required">
               </div>
             </div>
-            <!-- <div class="col-md-6">
-              <div class="form-group">
-                <label>Mobile Number <span class="compulsory">*</span>
-                </label>
-                <input type="text" oninput="check()" pattern="[1-9]{1}[0-9]{9}" minlength="10" maxlength="10" name="mobile2" id="mobile_no_2" placeholder="Enter Mobile Number" class="form-control" required="required">
-              </div>
-            </div> -->
-          </div>
-          <div class="row ">
-            <div class="col-md-4">
-              <h5 class="one">Family Details <br>
-                <small style="font-size:13px;">All fields are mandatory <span class="compulsory">*</span>
-                </small>
-              </h5>
-            </div>
-          </div>
-          <div class="row">
             <div class="col-md-6">
               <div class="form-group">
-                <label>Father Name <span class="compulsory">*</span>
+                <label>Pincode <span class="compulsory">*</span>
                 </label>
-                <input type="text" name="father_name" placeholder="Enter Father's Name" class="form-control" required="required">
+                <input type="text" name="pincode" placeholder="Enter Pincode" class="form-control" required="required">
               </div>
             </div>
-           <!--  <div class="col-md-6">
-              <div class="form-group">
-                <label>Father Occupation <span class="compulsory">*</span>
-                </label>
-                <input type="text" name="father_occupation" placeholder="Enter Father Occupation" class="form-control" required="required">
-              </div>
-            </div> -->
-            <!-- <div class="col-md-6">
-              <div class="form-group">
-                <label>Annual Family Income <span class="compulsory">*</span>
-                </label>
-                <select type="text" name="annual_family_income" class="form-control" required="required">
-                  <option value="">Select Option</option>
-                  <option value="0 to 1 lakh">0 to 1 lakh</option>
-                  <option value="1 to 2 lakh">1 to 2 lakh</option>
-                  <option value="2 to 3 lakh">2 to 3 lakh</option>
-                  <option value="3 to 4 lakh">3 to 4 lakh</option>
-                  <option value="4 to 5 lakh">4 to 5 lakh</option>
-                  <option value="5 to 6 lakh">5 to 6 lakh</option>
-                  <option value="6 to 8 lakh">6 to 8 lakh</option>
-                  <option value="8 to 10 lakh and more">8 to 10 lakh and more</option>
-                </select>
-              </div>
-            </div> -->
-            <div class="col-md-6">
-              <div class="form-group">
-                <label>Mobile No. <span class="compulsory">*</span>
-                </label>
-                <input type="text" pattern="[1-9]{1}[0-9]{9}" minlength="10" maxlength="10" name="mobile3" id="mobile_no_3" placeholder="Enter Mobile No" class="form-control" required="required">
-              </div>
-            </div>
-          </div>
-          <div class="row ">
-            <div class="col-md-6">
-              <h5 class="one">Sample Paper &amp; Demo Class Details <br>
-                <small style="font-size:13px;">All fields are mandatory <span class="compulsory">*</span>
-                </small>
-              </h5>
-            </div>
-          </div>
-          <div class="row">
             <div class="col-md-6">
               <div class="form-group">
                 <label>Apply For Class <span class="compulsory">*</span>
@@ -528,8 +455,6 @@
                 </select>
               </div>
             </div>
-            
-            
           </div>
           <div class="row">
             <div class="col-md-6">
@@ -552,8 +477,6 @@
                 <button type="submit" class="samplepaper_form_btn btn btn-primary mybutton6">Submit</button>
               </div>
             </div>
-            <br clear="all">
-            <p style="text-align:center;color:Red">Note : <b>Free Solved Sample Papers </b>Will Be Received in 5 to 6 Days </p>
           </div>
         </form>
       </div>

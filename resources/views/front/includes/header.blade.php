@@ -47,6 +47,12 @@
                               @endif
                            @endif
                         @endforeach
+                        <li class='nav-item'>
+                           <a class='nav-link' href='#.'>More</a> <i class='fas fa-caret-down'></i>
+                           <ul class='submenu'>
+                              <li><a href="{{ route('selection_list') }}">Achievements</a></li>
+                           </ul>
+                        </li>
                      </ul>
                   </div>
                </nav>

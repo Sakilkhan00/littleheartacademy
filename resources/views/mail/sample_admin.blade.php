@@ -300,13 +300,8 @@ a[x-apple-data-detectors='true'] {
                 <p>State   :- <?php echo $user_list['state']; ?> </p>
                 <p>City   :- <?php echo $user_list['city']; ?> </p>
                 <p>Pincode   :- <?php echo $user_list['pincode']; ?> </p>
-                <p>Phone Number :- <?php echo $user_list['mobile1']; ?> </p>
-
-                <h5>Family Details</h5>
                 <p>Father name  :- <?php echo $user_list['father_name']; ?> </p>
-                <p>Phone Number  :- <?php echo $user_list['mobile3']; ?> </p>
-
-                <h5>Sample Paper & Demo Class Details</h5>
+                <p>Phone Number :- <?php echo $user_list['mobile1']; ?> </p>
                 <p>Class name  :- <?php echo $user_list['class_name']; ?> </p>
                 <p>Address  :- <?php echo $user_list['address']; ?> </p>
                 <p>Any Question  :- <?php echo $user_list['remark']; ?> </p>
