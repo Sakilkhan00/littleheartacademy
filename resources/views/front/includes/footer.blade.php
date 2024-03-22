@@ -50,28 +50,31 @@
     </div>
   </div>
 </div>
-<!-- Footer End --> 
-        <!--Copyright Start-->
-        <div class="footer-bottom text-center">
-            <div class="container">
-                <div class="copyright-text">{{$config['copyright_text']}}</div>
-            </div>
-        </div>
-        <!--Copyright End--> 
-        <!-- Js --> 
-<script src="{{ asset('public/assets/js/jquery.min.js')}}"></script> 
-<script src="{{ asset('public/assets/js/bootstrap.min.js')}}"></script> 
-<script async src="{{ asset('public/assets/js/popper.min.js')}}"></script> 
-<script src="{{ asset('public/assets/rs-plugin/js/jquery.themepunch.tools.min.js')}}"></script> 
-<script src="{{ asset('public/assets/rs-plugin/js/jquery.themepunch.revolution.min.js')}}"></script> 
-<script async src="{{ asset('public/assets/js/jquery.fancybox.min.js')}}"></script> 
-<script src="{{ asset('public/assets/js/animate.js')}}"></script> 
+<div class="footer-bottom text-center">
+    <div class="container">
+        <div class="copyright-text">{{$config['copyright_text']}}</div>
+    </div>
+</div>
+<script src="{{ asset('public/assets/js/jquery.min.js')}}?{{ rand() }}" defer></script>
+
+
+<script src="{{ asset('public/assets/js/bootstrap.min.js')}}?{{ rand() }}" defer></script>
+<script src="{{ asset('public/assets/js/popper.min.js')}}?{{ rand() }}" async></script>
+
+
+<script src="{{ asset('public/assets/rs-plugin/js/jquery.themepunch.tools.min.js')}}?{{ rand() }}" async></script>
+<script src="{{ asset('public/assets/rs-plugin/js/jquery.themepunch.revolution.min.js')}}?{{ rand() }}" async></script>
+
+
+<script src="{{ asset('public/assets/js/jquery.fancybox.min.js')}}?{{ rand() }}" async></script>
+<script src="{{ asset('public/assets/js/owl.carousel.js')}}?{{ rand() }}" defer></script>
+<script src="{{ asset('public/assets/js/script.js')}}?{{ rand() }}" async></script>
+
+
+<script src="{{ asset('public/assets/js/animate.js')}}?{{ rand() }}"></script>
 <script>
-  new WOW().init();
-</script> 
-<script async src="{{ asset('public/assets/js/wow.js')}}"></script> 
-<script defer src="{{ asset('public/assets/js/owl.carousel.js')}}"></script> 
-<script async src="{{ asset('public/assets/js/script.js')}}"></script>
+  new WOW().init(); // Initialize WOW.js
+</script>
 <style>
     .modal-content
     {
