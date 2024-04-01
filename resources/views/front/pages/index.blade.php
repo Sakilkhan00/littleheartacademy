@@ -17,7 +17,7 @@
         </li> 
         @else 
         <li data-slotamount="7" data-transition="3dcurtain-horizontal" data-masterspeed="1000" data-saveperformance="on">
-            <img loading="eager" src="{{ asset('public/assets/banner')}}/{{$item->image}}" alt="">
+            <img loading="lazy" src="{{ asset('public/assets/banner')}}/{{$item->image}}" alt="{{$item->title}}">
             <div class="caption lft large-title tp-resizeme slidertext2" data-x="center" data-y="170" data-speed="600" data-start="1600">
             <span></span>
             </div>
@@ -41,7 +41,7 @@
             <div class="item-inner">
               <div class="cours-icon">
                 <span class="coure-icon-inner">
-                  <img loading="eager" src="{{ asset('public/assets/images/teacher.png')}}" alt="teacher">
+                  <img loading="lazy" src="{{ asset('public/assets/images/teacher.png')}}" alt="teacher">
                 </span>
               </div>
               <div class="cours-title">
@@ -58,7 +58,7 @@
             <div class="item-inner">
               <div class="cours-icon">
                 <span class="coure-icon-inner">
-                  <img loading="eager" src="{{ asset('public/assets/images/book.png')}}" alt="Quality Education">
+                  <img loading="lazy" src="{{ asset('public/assets/images/book.png')}}" alt="Quality Education">
                 </span>
               </div>
               <div class="cours-title">
@@ -75,7 +75,7 @@
             <div class="item-inner">
               <div class="cours-icon">
                 <span class="coure-icon-inner">
-                  <img loading="eager" src="{{ asset('public/assets/images/support.png')}}" alt="Life Time Support">
+                  <img loading="lazy" src="{{ asset('public/assets/images/support.png')}}" alt="Life Time Support">
                 </span>
               </div>
               <div class="cours-title">
@@ -92,7 +92,7 @@
             <div class="item-inner">
               <div class="cours-icon">
                 <span class="coure-icon-inner">
-                  <img loading="eager" src="{{ asset('public/assets/images/scholarship.png')}}" alt="Latest Updates">
+                  <img loading="lazy" src="{{ asset('public/assets/images/scholarship.png')}}" alt="Latest Updates">
                 </span>
               </div>
               <div class="cours-title">
@@ -183,7 +183,7 @@
     <div class="row">
       <div class="col-lg-6">
         <div class="aboutImg">
-          <img loading="eager" src="{{ asset('public/assets/uploads/institute_img.jpg')}}" alt="Institute" width="500px" height="500px">
+          <img loading="lazy" src="{{ asset('public/assets/uploads/institute_img.jpg')}}" alt="Institute" width="500px" height="500px">
         </div>
       </div>
       <div class="col-lg-6">
@@ -197,7 +197,7 @@
             <li>
               <div class="learing-wrp">
                 <div class="edu_icon">
-                  <img loading="eager" src="{{ asset('public/assets/images/education.png')}}" alt="Regular Coaching">
+                  <img loading="lazy" src="{{ asset('public/assets/images/education.png')}}" alt="Regular Coaching">
                 </div>
                 <div class="learn_info">
                   <h3>Regular Coaching Classes</h3>
@@ -207,7 +207,7 @@
             <li>
               <div class="learing-wrp">
                 <div class="edu_icon">
-                  <img loading="eager" src="{{ asset('public/assets/images/academy.png')}}" alt="Extra Curricular">
+                  <img loading="lazy" src="{{ asset('public/assets/images/academy.png')}}" alt="Extra Curricular">
                 </div>
                 <div class="learn_info">
                   <h3>Extra Curricular Activities</h3>
@@ -217,7 +217,7 @@
             <li>
               <div class="learing-wrp">
                 <div class="edu_icon">
-                  <img loading="eager" src="{{ asset('public/assets/images/class.png')}}" alt="Special Education">
+                  <img loading="lazy" src="{{ asset('public/assets/images/class.png')}}" alt="Special Education">
                 </div>
                 <div class="learn_info">
                   <h3>Special Education</h3>
@@ -266,7 +266,7 @@
             @foreach($gallery as $img) 
             <div class="col-lg-3 col-md-6">
               <div class="galleryImg">
-                <img loading="eager" src="{{ asset('public/assets/gallery')}}/{{$img->image_path}}" alt="{{$img->title}}" width="300px" height="300px">
+                <img loading="lazy" src="{{ asset('public/assets/gallery')}}/{{$img->image_path}}" alt="{{$img->title}}" width="300px" height="300px">
                 <div class="portfolio-overley">
                     <div class="content">
                       <a href="{{ asset('public/assets/gallery')}}/{{$img->image_path}}" class="fancybox image-link" data-fancybox="images" title="{{$img->title}}">
@@ -298,7 +298,7 @@
     </div>
     <p></p>
     <div class="phonewrp">
-      <img loading="eager" src="{{ asset('public/assets/images/phone_icon.png')}}" alt="">
+      <img loading="lazy" src="{{ asset('public/assets/images/phone_icon.png')}}" alt="">
       <a href="tel:{{$config['contact_phone']}}">{{$config['contact_phone']}}</a>
     </div>
   </div>
@@ -316,7 +316,7 @@
         @foreach($course as $item) 
           <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 mt-4">
             <a class="card shadow course_box h-100" href="#">
-              <img loading="eager" src="{{ asset('public/storage/course/')}}/{{$item->image}}" class="card-img-top" alt="{{$item->title}}">
+              <img loading="lazy" src="{{ asset('public/storage/course/')}}/{{$item->image}}" class="card-img-top" alt="{{$item->title}}">
               <div class="card-body">
                 <h5 class="card-title">{{$item->title}}</h5>
               </div>
@@ -325,7 +325,7 @@
         <!-- <div class="col-lg-3 col-sm-6">
           <div class="single-teachers">
             <div class="teacherImg">
-              <img loading="eager" src="{{ asset('public/storage/course/')}}/{{$item->image}}" alt="{{$item->title}}">
+              <img loading="lazy" src="{{ asset('public/storage/course/')}}/{{$item->image}}" alt="{{$item->title}}">
             </div>
             <div class="teachers-content">
               <h4>

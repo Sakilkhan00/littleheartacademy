@@ -19,7 +19,7 @@
 	                @foreach($achievements as $img)
 	                <div class="col-lg-4 col-md-6">
 	                    <div class="galleryImg">
-	                        <img loading="eager" class="w-100" src="{{ asset('public/assets/selection')}}/{{$img->image_path}}" alt="{{$img->title}}"  height="300px">
+	                        <img loading="lazy" class="w-100" src="{{ asset('public/assets/selection')}}/{{$img->image_path}}" alt="{{$img->title}}"  height="300px">
 	                        <div class="portfolio-overley">
 	                            <div class="content"> 
 	                                <a href="{{ asset('public/assets/selection')}}/{{$img->image_path}}" class="fancybox image-link" data-fancybox="images" title="{{$img->title}}"><i class="fas fa-search-plus"></i></a> 
