@@ -116,7 +116,7 @@
       <div class="row m-0">
           <div class="col-lg-5 col-12 d-flex align-items-center">
             <div class="img-cver">
-              <img decoding="async" src="https://img.etimg.com/thumb/msid-92194882,width-420,height-315,imgsize-1591359,,resizemode-75/edtech.jpg" title="" alt="" loading="lazy">
+              <img src="https://img.etimg.com/thumb/msid-92194882,width-420,height-315,imgsize-1591359,,resizemode-75/edtech.jpg" alt="about us" loading="lazy">
             </div>
           </div>
           <div class="col-lg-7 col-12">
