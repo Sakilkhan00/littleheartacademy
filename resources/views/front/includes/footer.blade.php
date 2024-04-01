@@ -5,7 +5,7 @@
     <div class="row">
       <div class="col-lg-4">
         <div class="footer_logo">
-            <img alt="footer logo" loading="eager" class="footer-default" width="150px" src="{{asset('public/storage/logo/')}}/{{CstmConfig()['site_logo_footer']}}"></div>
+            <img alt="footer logo" loading="eager" class="footer-default" width="120px" src="{{asset('public/storage/logo/')}}/{{CstmConfig()['site_logo_footer']}}"></div>
         <p>{{CstmConfig()['footer_text']}}</p>
       </div>
       <div class="col-lg-2 col-md-4">
